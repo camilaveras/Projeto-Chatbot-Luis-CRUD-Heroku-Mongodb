@@ -78,7 +78,7 @@ intents.matches('Sentimento negativo', (session, results) => {
 
 //intenção  ex verificar - ela vem depois que a pessoa fala dos problemas
 
-intents.matches('Soluçõoes para tristeza', (session, results) => {
+intents.matches('Soluções para tristeza', (session, results) => {
     session.send('Não se desespere, não seja ansiosa, pense no presente e continue nele. voce ficara bem, tudo passa');
 });
 
