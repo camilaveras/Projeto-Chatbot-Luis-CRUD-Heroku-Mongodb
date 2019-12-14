@@ -1,0 +1,31 @@
+Passo a passo bot
+
+criar pasta com o nome do seu bot, no meu caso é Ada
+
+-> npm init -y
+criando package json
+fazendo alterações dentro do arquivo
+
+-> npm install botbuilder@3.14.0
+baixando o bot builder na versão v3
+
+-> npm install restify@6.3.4 ou no express
+restify é como se fosse o express
+
+-> npm install dotenv-extended
+
+-> npm install moment
+
+
+---------------LUIS-----------------------
+--> CRIE INTENÇÕES NO luis
+
+---> clique me treinar 'Train trem'
+
+---> clique em publicar
+
+---> depois clicar no edpoint -'recursos do azure'
+
+----> colocar a url dentro de .env 
+
+---> mudar sua chave para 180 timezoneOFFset=180 de acordo com usa

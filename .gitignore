@@ -1,0 +1,7 @@
+node_modules
+
+# #DOTENV EN VARIables fil
+# .env
+.vscode
+# package-lock
+# .package-lock.json

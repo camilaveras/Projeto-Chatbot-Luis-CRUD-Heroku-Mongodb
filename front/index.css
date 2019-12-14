@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #044f48, #2a7561);
+    height:-webkit-fill-available;
+    width: 100%;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    width: 320px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+
+}
+
+.identity {
+    display: flex;
+    width: 90%;
+    margin-top: 2vh;
+}
+
+.identity-title {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.icon-chat {
+    height: 4vh;
+    margin-right: 1vh;
+    border-radius: 30px;
+}
+
+.messages-content { 
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 2vh;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.message-box {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 2vh;
+}
+
+.message-input {
+    width: 90%;
+    height: 3vh;
+    margin-right: 1vh;
+    border-radius: 10px;
+    border: none;
+    background: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.message-submit {
+    border: none;
+    color: #fff;
+    background:#248A52;
+    border-radius: 10px;
+    padding: 6px 10px;
+}
