@@ -114,19 +114,20 @@ const splitByComma = text.split(",")
          
          const triagem = new triagemCollection({nome, cidade, email})
 
-         const objeto = JSON.stringify(triagem);
-         console.log (typeof objeto)
+        //  const triagem = JSON.stringify(tri);
+        //  console.log (typeof objeto)
 
-         console.log(objeto)
+        //  console.log(objeto)
          //resultado esperado > {"_id":"5ded46f944f87b2778c20204","nome":"camila","cidade":"são paulo","email":" camil@s.com"}
 
-        objeto.save((error) => {
-            if (!objeto.save){
+        triagem.save((error) => {
+            if (error){
                 return ("error")
             }else{
                 return ("Sucess")
             }
         })
+        
         session.send('Ok, irei gerar um consulta para voce')
     }});
         

@@ -19,11 +19,10 @@ const getById = (request, response) => {
     if(error) { // deu algum erro no mongo
       return response.status(500).send(error)
     } else {
-     // if(contato !== null  && contato!== undefined)
       if(contato) {
         return response.status(200).send(contato)
       } else {
-        return response.status(404).send('Contato nao encontrado')
+        return response.status(404).send('Triagem não encontrada')
       }
     }
   })
@@ -59,9 +58,9 @@ const deleteById = (request, response) =>{
       return response.status(500).send(error)
     }else{
       if(triagem){
-        return response.status(200).send("triagem excluído com sucesso")
+        return response.status(200).send("triagem foi excluida com sucesso")
       }
-      return response.status(404).send("triagem não encontrado, tente novamente")
+      return response.status(404).send("triagem não foi encontrado, por favor tente novamente")
     }
   })  
 };

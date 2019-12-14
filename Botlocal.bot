@@ -1,0 +1,18 @@
+{
+    "name": "Botlocal",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "appId": "",
+            "appPassword": "",
+            "endpoint": "http://localhost:3001/api/messages",
+            "id": "a49528d0-1ea4-11ea-a03f-590839955fe9",
+            "name": "http://localhost:3001/api/messages"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0",
+    "path": "C:\\Users\\camil\\OneDrive\\Área de Trabalho\\chatbot-teste\\servidor\\Botlocal.bot",
+    "overrides": null
+}
