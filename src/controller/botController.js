@@ -95,7 +95,7 @@ let teste = intents.onDefault(
    builder.DialogAction.send('Lembre-se que sou apenas a Alda, sua amiga BOT, não sou a Jean Grey para decifrar o que voce disse')
   );
 
-//CRUD---------------------------------- intenção criar
+//CRUD----------------------------------CRIANDO CONSULTA PELO BOT
 
 intents.matches(/Criar Consulta.*/i, (session, results) => {
     const text = session.message.text.replace(/Criar Consulta/i, '').trim()
@@ -104,64 +104,48 @@ intents.matches(/Criar Consulta.*/i, (session, results) => {
 const splitByComma = text.split(",")
 
     if (splitByComma.length < 3) {
-        session.send('Comando inválido. O formato do comando é "Criar Consulta nome,cidade,email"')
+        session.send('Comando inválido. O formato do comando é "Criar Consulta nome,cidade,email,bairroconsulta"')
     } else {
-        const [nome, cidade, email] = splitByComma
-        const tria = (`nome: ${nome}, cidade: ${cidade}, email: ${email}`)
-         //esse console basicamente faz isso:Criar Consulta camila, são paulo, camila@s.com >  console.log(tria)
-         // const triagem = new triagemCollection(tria)
-         // console.log(triagem)
-         
-         const triagem = new triagemCollection({nome, cidade, email})
-
-        //  const triagem = JSON.stringify(tri);
-        //  console.log (typeof objeto)
-
-        //  console.log(objeto)
-         //resultado esperado > {"_id":"5ded46f944f87b2778c20204","nome":"camila","cidade":"são paulo","email":" camil@s.com"}
+        const [nome, cidade, email, bairroconsulta] = splitByComma
+        const tria = (`nome: ${nome}, cidade: ${cidade}, email: ${email}, bairroconsulta: ${bairroconsulta}`) 
+         const triagem = new triagemCollection({nome, cidade, email, bairroconsulta})
 
         triagem.save((error) => {
             if (error){
+                console.log(error)
                 return (error)
             }else{
-                return (triagem)
+                return ("sucess")
             }
         })
         
-        session.send('Consulta criada' + triagem)
+        session.send('Consulta criada com sucesso, esse curso do reprograma faz programadora mesmo  ' + triagem)
     }});
         
-        // validando os dados com o Schema 
-        // const triagem = new triagemCollection({name, city, email}) => (){})
-        // salvando o triagem caso não dê erros
-        
-    
 
-//CRUD intenção atualizar
+//----------------------CRUD intenção atualizar
 intents.matches('Atualizar', (session, results) => {
     session.send('Ok, irei atualizar um consulta para voce')
 })
 
 
-//CRUD intenção deletar
+//-----------------------CRUD intenção deletar
 intents.matches('Deletar', (session, results) => {
     session.send('Ok, irei deletar um consulta para voce')
 })
 
-//Crud intenção consultar todos
+//-----------------------Crud intenção consultar todos
 intents.matches('Consultar todos', (session, results) => {
     session.send('Ok, irei consultar todas as consultas para voce')
 })
 
 
-//dialogo
+//--------------------dialogo
 Alda.dialog('/', intents);
 
 
 var listen = connector.listen();
 
 module.exports = 
-    listen,
-    triagemCollection
-
+    listen
 
