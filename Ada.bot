@@ -1,0 +1,18 @@
+{
+    "name": "Ada",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "appId": "",
+            "appPassword": "",
+            "endpoint": "https://bot-teste001.herokuapp.com/api/messages",
+            "id": "3f6e7440-1ea2-11ea-a03f-590839955fe9",
+            "name": "https://bot-teste001.herokuapp.com/api/messages"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0",
+    "overrides": null,
+    "path": "C:\\Users\\camil\\OneDrive\\Área de Trabalho\\chatbot-teste\\servidor\\Ada.bot"
+}
