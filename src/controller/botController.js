@@ -122,13 +122,13 @@ const splitByComma = text.split(",")
 
         triagem.save((error) => {
             if (error){
-                return ("error")
+                return (error)
             }else{
-                return ("Sucess")
+                return (triagem)
             }
         })
         
-        session.send('Ok, irei gerar um consulta para voce')
+        session.send('Consulta criada' + triagem)
     }});
         
         // validando os dados com o Schema 
@@ -161,6 +161,7 @@ Alda.dialog('/', intents);
 var listen = connector.listen();
 
 module.exports = 
-    listen
+    listen,
+    triagemCollection
 
 
