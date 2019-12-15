@@ -1,11 +1,13 @@
-# Projeto-Chatbot-Luis-CRUD-Heroku-Mongodb
-Projeto Chatbot Luis CRUD Heroku Mongodb
 
-** CHATBOT **
+[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) [![Badges](http://img.shields.io/:badges-9/9-ff6799.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger)
 
-! [Recordit GIF] <p align="center"> <img src="https://media.giphy.com/media/3UBa2cTg7NDA4/giphy.gif"/> </p>
+<a href='https://coveralls.io/github/badges/badgerbadgerbadger?branch=master'><img src='https://coveralls.io/repos/github/badges/badgerbadgerbadger/badge.svg?branch=master' alt='Coverage Status' /></a>
 
-<! - [! [FVCproductions] (https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)] (http://fvcproductions.com) ->
+
+# Projeto Chatbot Luis CRUD Heroku Mongodb
+Chatbot Ada Lovelace
+<p align="center"> <img src="https://media.giphy.com/media/3UBa2cTg7NDA4/giphy.gif"/> </p>
+
 
 
 # CHATBOT com serviço cognitivo Luis, com MongoDB e Implantar no Heroku
@@ -16,7 +18,7 @@ Projeto Chatbot Luis CRUD Heroku Mongodb
 
 > #chatbot #luis #serviçocognitivo #azure #crud
 
-** O que esperar da leitura? **
+**O que esperar da leitura?**
 
 - Construção do Projeto
 - pacote npm
