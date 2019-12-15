@@ -30,7 +30,7 @@ let intents = new builder.IntentDialog({ recognizers: [recognizer] });
 
 /* 1 intenção - saudar */
 intents.matches('Saudar', (session, results) => {
-    session.send('Olá! você está bem? ');
+    session.send('Olá, você está bem? ');
 });
 
 /* 1 intenção - pedir */
@@ -73,26 +73,26 @@ intents.matches('Saudar', (session, results) => {
 //quando a pessoa estiver triste e falar qu esta triste
 
 intents.matches('Sentimento negativo', (session, results) => {
-    session.send('Me conte o que está acontecendo com você?');
+    session.send('Me conte porque esta sentindo isso?');
 });
 
 //intenção  ex verificar - ela vem depois que a pessoa fala dos problemas
 
 intents.matches('Soluções para tristeza', (session, results) => {
-    session.send('Não se desespere, não seja ansiosa, pense no presente e continue nele. voce ficara bem, tudo passa');
+    session.send('Respire fundo, tudo passa, a dor, a ansiedade, o sofrimento, o segredo é aprender a lidar com as adversidades');
 });
 
 //intenção de preposições ou continuar acreditando que esta tudo ruim
 
 intents.matches('Desacreditada da vida', (session, results) => {
-    session.send('Estou aqui para te escutar e te ajudar, não irei embora até voce melhorar. Mas antes de voce falar algo, peço que respire fundo e pense em tudo que voce passou e continua firme e forte');
+    session.send('Entendo que o que está vivendo é dificl, porém trabalharemos juntas para melhorar a sua situação. Agora peço que respire fundo e pense em tudo que você passou e continua firme e forte');
    
 
 });
 
 //quando a pessoa falar algo que não ta no luis
 let teste = intents.onDefault(
-   builder.DialogAction.send('Lembre-se que sou apenas a Alda, sua amiga BOT, não sou a Jean Grey para decifrar o que voce disse')
+   builder.DialogAction.send('Lembre-se que sou apenas a Ada, sua amiga BOT, não sou a Jean Grey para decifrar o que você disse')
   );
 
 //CRUD----------------------------------CRIANDO CONSULTA PELO BOT
