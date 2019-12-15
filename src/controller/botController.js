@@ -119,7 +119,7 @@ const splitByComma = text.split(",")
             }
         })
         
-        session.send('Consulta criada com sucesso, esse curso do reprograma faz programadora mesmo  ' + triagem)
+        session.send('Consulta criada com sucesso, esse curso do reprograma faz milagre  ' + triagem)
     }});
         
 
