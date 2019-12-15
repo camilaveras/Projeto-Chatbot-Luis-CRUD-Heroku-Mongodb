@@ -2,19 +2,16 @@ Passo a passo bot
 
 criar pasta com o nome do seu bot, no meu caso é Ada
 
--> npm init -y
-criando package json
-fazendo alterações dentro do arquivo
+`npm init -y`
 
--> npm install botbuilder@3.14.0
-baixando o bot builder na versão v3
+``baixando o bot builder na versão v3``
 
--> npm install restify@6.3.4 ou no express
-restify é como se fosse o express
+`npm install express`
 
--> npm install dotenv-extended
 
--> npm install moment
+`npm install dotenv-extended`
+
+`npm install moment`
 
 
 ---------------LUIS-----------------------
