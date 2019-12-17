@@ -16,7 +16,7 @@ const getById = (request, response) => {
   const idtriagem = request.params.id
 
   triagemCollection.findById(idtriagem, (error, contato) => {
-    if(error) { // deu algum erro no mongo
+    if(error) { 
       return response.status(500).send(error)
     } else {
       if(contato) {
@@ -28,14 +28,13 @@ const getById = (request, response) => {
   })
 }
 
-//--------POST >>>> Adicionando um novo triagem
+//--------POST >>>> Adicionando uma nova triagem
 
 const postAdd = (request, response) => {
-  // pegando os dados do JSON na request
   const triagemDoBody = request.body
-  // validando os dados com o Schema 
+
   const triagem = new triagemCollection(triagemDoBody)
-  // salvando o triagem caso não dê erros
+
   triagem.save((error) => {
 
 
@@ -66,9 +65,9 @@ const deleteById = (request, response) =>{
 };
 //---------UPDATE >>>>>  alterando um triagem pelo id
 const updateById = (request, response) =>{
-// recebendo o id do triagem que vai ser alterado
+
   const idParam = request.params.id
-  // recebendo os dados do body
+
   const triagemDoBody = request.body
 const options = { new : true }
 triagemCollection.findByIdAndUpdate(idParam, triagemDoBody,options, (error, triagem) =>{

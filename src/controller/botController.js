@@ -30,50 +30,13 @@ let intents = new builder.IntentDialog({ recognizers: [recognizer] });
 
 /* 1 intenção - saudar */
 intents.matches('Saudar', (session, results) => {
-    session.send('Olá, você está bem? ');
+    session.send('Olá, tudo bem? ');
 });
-
-/* 1 intenção - pedir */
-// intents.matches('consulta', [
-//     (session, args, next) => {
-//         var consulta = [
-//             "Psiquiatra",
-//             "Psicologo",
-//             "Psicologo comportamental",
-//             "Analise",
-//             "Terapia de casal"
-//         ];
-//         let entityconsulta = builder.EntityRecognizer.findEntity(args.entities, 'consulta')
-      
-//         //fazendo match da escolha da consulta do usuario
-//         if(entityconsulta){
-//             var match = builder.EntityRecognizer.findBestMatch(consulta, entityconsulta.entity);
-//         }
-//         //se diferente  envie essa mensagem com as consultas
-//         if (!match) {
-//             builder.Prompts.choice(session, 'Tudo bem, já que voce prefere falar com um psicologo e não bater uma papo comigo, escolha uma especialidade abaixo:  ', consulta)
-//         } else{
-//             next({response: match});
-//         }
-//     },
-
-//     /* horario que a consulta vai chegar */
-//     (session, results) => {
-//         if (results.response){
-//             var time = moment().add(30, 'm');
-
-//             session.dialogData.time = time.format('HH:mm');
-//             session.send("Perfeito sua consulta com **%s** esta marcada para  as **%s**", results.response.entity, session.dialogData.time);
-//         } else{
-//             session.send('sem problemas!');
-//         }
-//     }
-// ]);
 
 //quando a pessoa estiver triste e falar qu esta triste
 
 intents.matches('Sentimento negativo', (session, results) => {
-    session.send('Me conte porque esta sentindo isso?');
+    session.send('Me conte porquê está se sentindo dessa forma');
 });
 
 //intenção  ex verificar - ela vem depois que a pessoa fala dos problemas
@@ -85,7 +48,7 @@ intents.matches('Soluções para tristeza', (session, results) => {
 //intenção de preposições ou continuar acreditando que esta tudo ruim
 
 intents.matches('Desacreditada da vida', (session, results) => {
-    session.send('Entendo que o que está vivendo é dificl, porém trabalharemos juntas para melhorar a sua situação. Agora peço que respire fundo e pense em tudo que você passou e continua firme e forte');
+    session.send('Entendo que o que você está vivendo é dificil, porém trabalharemos juntas para melhorar a sua situação. Agora peço que respire fundo e pense em tudo que você já passou e superou e hoje está no REPROGRAMA firme e forte');
    
 
 });
@@ -123,18 +86,18 @@ const splitByComma = text.split(",")
     }});
         
 
-//----------------------CRUD intenção atualizar
+//---------------------- intenção atualizar melhoria
 intents.matches('Atualizar', (session, results) => {
     session.send('Ok, irei atualizar um consulta para voce')
 })
 
 
-//-----------------------CRUD intenção deletar
+//---------------------- intenção deletar
 intents.matches('Deletar', (session, results) => {
     session.send('Ok, irei deletar um consulta para voce')
 })
 
-//-----------------------Crud intenção consultar todos
+//----------------------- intenção consultar todos
 intents.matches('Consultar todos', (session, results) => {
     session.send('Ok, irei consultar todas as consultas para voce')
 })
