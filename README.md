@@ -92,6 +92,7 @@ https://medium.com/@camilaverass/heroku-mongodb-node-js-crud-71972ca356f8
 
 ## Melhorias
 
+- ** Revisar todo o dialogo juntamente com psicologos focados em ansiedade e depressão** 🔨
 - ** Subir o projeto o Facebook messenger ** 🔨
 - ** Criar uma pagina "CHATBOT ADA" no facebook para auxiliar as pessoas que estejam passando por problemas ** 🔨🔨
 - ** Subir o projeto o Slack ** 🔨🔨🔨
