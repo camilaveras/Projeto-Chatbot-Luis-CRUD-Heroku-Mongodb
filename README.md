@@ -4,13 +4,13 @@
 <a href='https://coveralls.io/github/badges/badgerbadgerbadger?branch=master'><img src='https://coveralls.io/repos/github/badges/badgerbadgerbadger/badge.svg?branch=master' alt='Coverage Status' /></a>
 
 
-# Projeto Chatbot Luis CRUD Heroku Mongodb
+# CHATBOT com serviço cognitivo Luis,MongoDB e Deploy no Heroku
 Chatbot Ada Lovelace
 <p align="center"> <img src="https://media.giphy.com/media/3UBa2cTg7NDA4/giphy.gif"/> </p>
 
 
 
-# CHATBOT com serviço cognitivo Luis,MongoDB e Deploy no Heroku
+# CHATBOT
 
 | <a href="https://chatbot-ada.herokuapp.com/" target="_blank">  CHATBOT Ada Lovelace  </a> 
 
