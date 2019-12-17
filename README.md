@@ -49,6 +49,7 @@ Chatbot Ada Lovelace
 > Abaixo verá alguns informações `relevantes` para prosseguir com o andamento do projeto.
 
 - [Instalação] (# instalação)
+- [Melhorias] (# melhorias)
 - [Contribuindo] (# contribuindo)
 - [Autora] (# equipe)
 
@@ -89,6 +90,16 @@ https://medium.com/@camilaverass/heroku-mongodb-node-js-crud-71972ca356f8
 
 ---
 
+## Melhorias
+
+- ** Subir o projeto o Facebook messenger ** 🔨
+- ** Criar uma pagina "CHATBOT ADA" no facebook para auxiliar as pessoas que estejam passando por problemas ** 🔨🔨
+- ** Subir o projeto o Slack ** 🔨🔨🔨
+- ** Disponibilizar o projeto para consultorios e hospitais publicos** 🔨🔨🔨🔨
+
+
+
+---
 ## Contribuindo
 
 > Para começar ...
