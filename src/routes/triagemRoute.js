@@ -12,3 +12,4 @@ router.patch("/atualizar/:id" ,controller.updateById)
 
 
 module.exports = router
+

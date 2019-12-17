@@ -3,14 +3,14 @@ const Schema = mongoose.Schema
 
 const TriagemSchema =  new Schema({
     _id:{
-        type: mongoose.Schema.Types.ObjectId, // usando o tipo object ID
-        auto: true, // é gerado automaticamente?
+        type: mongoose.Schema.Types.ObjectId, 
+        auto: true, //  coments > é gerado automaticamente?
         required: true // é obrigatório?
     },
     nome :{
         type: String,
         require : true,
-        unique: true // incluindo como chave primaria 
+        unique: true // coments > incluindo como chave primaria 
     
     },
     cidade:{
@@ -28,8 +28,7 @@ const TriagemSchema =  new Schema({
     
 })
 
-// solicitando ao mongo para criar a collection para validação
-//Triagem vai ser o nome da collection no mongo
+
 const TriagemCollection = mongoose.model('Triagem ', TriagemSchema);
 
 // exportando a Schema para outros arquivos utlizarem
